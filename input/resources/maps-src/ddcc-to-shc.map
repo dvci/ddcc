@@ -63,16 +63,27 @@ group DDCCImmunizationtoSHC(
     immunization.patient as patient -> immunizationSHC.patient = create('Reference') as patientRef then {
         patient.reference -> patientRef.reference = "resource:0" "Patient Reference";
     };
-    immunization.coding as coding -> immunizationSHC.coding as codingSHC then vaccineCode(immunization, immunizationSHC) "vaccineCode";
+
+        immunization.vaccineCode as code then {
+
+        code.coding as coding -> immunization.vaccine as vaccine then {
+
+            coding -> immunization.system = coding.system "System";
+
+            coding -> immunization.code = coding.code "Set Code";
+
+        } "coding";
+
+    };
+    
     immunization.occurrence as occurrenceDateTime -> immunizationSHC.occurrence = occurrenceDateTime "Occurrence DateTime";
 
     immunization.manfacturer as manfacturer -> immunizationSHC.manfacturer = manfacturer "Manufacturer";
     immunization.lotNumber as lotNumber -> immunizationSHC.lotNumber = lotNumber "Lot Number";
-}
 
-group vaccineCode(
-      source immunization: DDCCImmunization,
-      target immunizationSHC : immunizationDM
-      ){
-      immunization.coding as coding -> immunizationSHC.coding = coding "vaccineCode Coding"; 
+    immunization.performer as performer -> immunizationSHC.performer = performer then {
+
+        performer.actor first as actor -> performer.actor = actor "Actor";
+
+    } "Performer";
 }
