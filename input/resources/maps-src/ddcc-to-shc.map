@@ -22,6 +22,8 @@ group DDCCtoSHC (
     target shc : SHCVaccinationBundleDM
     ){
 
+    ddcc.type as type -> shc.type = type "type";
+
     ddcc.entry as entry then {
         entry.resource : Patient first as patient then {
             entry -> shc.entry as entrySHC then {
@@ -47,8 +49,11 @@ group DDCCPatienttoSHC(
     target patientSHC : patientDM
     ){
     patient.name only_one as name -> patientSHC.name = name then {
-        name.given as givenname -> name.given = givenname "Given Name";
-        name.family as familyname -> name.family = familyname "Family Name";
+        name.given as givenname where givenname.exists() -> name.given = givenname "Given Name";
+        name.family as familyname where familyname.exists() -> name.family = familyname "Family Name";
+        name.text as text where (name.given.empty() and name.family.empty()) -> name.given as givenSHC, name.family as familySHC then textName(patient, patientSHC) "Call TextName";
+        // name.given as givenname -> name.given = givenname "Given Name";
+        // name.family as familyname -> name.family = familyname "Family Name";
     } "Name";
 
     patient.birthDate as birthDate -> patientSHC.birthDate = birthDate "Birth Date"; 
@@ -76,3 +81,14 @@ group vaccineCode(
       ){
       immunization.coding as coding -> immunizationSHC.coding = coding "vaccineCode Coding"; 
 }
+
+group textName(
+    source patient: DDCCPatient,
+    target patientSHC : patientDM
+    ){
+    patient.name only_one as name -> patientSHC.name = name then {
+        name.text as text -> name.given = (%text.substring(0, %text.indexOf(" ")-1)) "Given Name From Text";
+        name.text as text -> name.family = (%text.substring(%text.indexOf(" "))) "Family Name From Text";
+    } "Text Name";
+}
+
