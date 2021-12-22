@@ -1,0 +1,2522 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../SHC-to-DDCC-Mappings.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../SHC-to-DDCC-Mappings.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72" class=xl65>
+
+<table border=0 cellpadding=0 cellspacing=0 width=3040 style='border-collapse:
+ collapse;table-layout:fixed;width:2280pt'>
+ <col class=xl65 width=697 style='mso-width-source:userset;mso-width-alt:22314;
+ width:523pt'>
+ <col class=xl65 width=295 style='mso-width-source:userset;mso-width-alt:9429;
+ width:221pt'>
+ <col class=xl65 width=107 style='mso-width-source:userset;mso-width-alt:3413;
+ width:80pt'>
+ <col class=xl65 width=103 style='mso-width-source:userset;mso-width-alt:3285;
+ width:77pt'>
+ <col class=xl65 width=95 style='mso-width-source:userset;mso-width-alt:3029;
+ width:71pt'>
+ <col class=xl65 width=83 style='mso-width-source:userset;mso-width-alt:2645;
+ width:62pt'>
+ <col class=xl65 width=125 style='mso-width-source:userset;mso-width-alt:4010;
+ width:94pt'>
+ <col class=xl65 width=356 style='mso-width-source:userset;mso-width-alt:11392;
+ width:267pt'>
+ <col class=xl65 width=129 style='mso-width-source:userset;mso-width-alt:4138;
+ width:97pt'>
+ <col class=xl65 width=96 style='mso-width-source:userset;mso-width-alt:3072;
+ width:72pt'>
+ <col class=xl65 width=92 style='mso-width-source:userset;mso-width-alt:2944;
+ width:69pt'>
+ <col class=xl65 width=103 style='mso-width-source:userset;mso-width-alt:3285;
+ width:77pt'>
+ <col class=xl65 width=101 span=2 style='mso-width-source:userset;mso-width-alt:
+ 3242;width:76pt'>
+ <col class=xl65 width=557 style='mso-width-source:userset;mso-width-alt:17834;
+ width:418pt'>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl71 width=697 style='height:34.0pt;width:523pt'>DDCC
+  0.2.1 RC1</td>
+  <td class=xl72 width=295 style='width:221pt'></td>
+  <td class=xl72 width=107 style='width:80pt'></td>
+  <td class=xl72 width=103 style='width:77pt'></td>
+  <td colspan=2 class=xl72 width=178 style='width:133pt'>Condition (IF True)</td>
+  <td class=xl72 width=125 style='width:94pt'>Mapping Equivalence<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl71 width=356 style='width:267pt'>SHC V+T IG v0.6.2-STU 1</td>
+  <td class=xl72 width=129 style='width:97pt'></td>
+  <td class=xl72 width=96 style='width:72pt'></td>
+  <td class=xl72 width=92 style='width:69pt'></td>
+  <td class=xl72 width=103 style='width:77pt'></td>
+  <td class=xl72 width=101 style='width:76pt'></td>
+  <td class=xl72 width=101 style='width:76pt'></td>
+  <td class=xl72 width=557 style='width:418pt'>Comments</td>
+ </tr>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl71 width=697 style='height:34.0pt;width:523pt'>Element</td>
+  <td class=xl72 width=295 style='width:221pt'>Data Type</td>
+  <td class=xl72 width=107 style='width:80pt'>Cardinality - Min</td>
+  <td class=xl72 width=103 style='width:77pt'>Cardinality - Max</td>
+  <td class=xl72 width=95 style='width:71pt'>Computable FHIRPath</td>
+  <td class=xl72 width=83 style='width:62pt'>Narrative</td>
+  <td class=xl72 width=125 style='width:94pt'></td>
+  <td class=xl71 width=356 style='width:267pt'>Element</td>
+  <td class=xl72 width=129 style='width:97pt'>Data Type</td>
+  <td class=xl72 width=96 style='width:72pt'>Cardinality - Min</td>
+  <td class=xl72 width=92 style='width:69pt'>Cardinality - Max</td>
+  <td class=xl72 width=103 style='width:77pt'>Data Type Mapping</td>
+  <td class=xl72 width=101 style='width:76pt'>Vocabulary Mapping</td>
+  <td class=xl72 width=101 style='width:76pt'>Assignment</td>
+  <td class=xl72 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.identifier</td>
+  <td class=xl65 width=295 style='width:221pt'>Identifier</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>SHCVaccinationBundleDM</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.type</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.timestamp</td>
+  <td class=xl65 width=295 style='width:221pt'>instant</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.link</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.link:hcid</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.link:hcid.url</td>
+  <td class=xl65 width=295 style='width:221pt'>url</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.link:hcid.relation</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.entry:ddccComposition</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.entry:ddccComposition</td>
+  <td class=xl65 width=295 style='width:221pt'>DDCCComposition</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.entry:ddccPatient</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.entry:ddccPatient.resource</td>
+  <td class=xl65 width=295 style='width:221pt'>DDCCPatient</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.entry:ddccImmunization</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl68 width=697 style='height:34.0pt;width:523pt'>DDCCDocument.entry:ddccImmunization.resource</td>
+  <td class=xl65 width=295 style='width:221pt'>DDCCImmunization</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.entry:ddccOrganization</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.entry:ddccOrganization.resource</td>
+  <td class=xl65 width=295 style='width:221pt'>DDCCOrganization</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocument.signature</td>
+  <td class=xl65 width=295 style='width:221pt'>Signature</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.extension:vaccineBrand</td>
+  <td class=xl65 width=295 style='width:221pt'>Coding</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.extension:vaccineMarketAuthorization</td>
+  <td class=xl65 width=295 style='width:221pt'>Coding</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.extension:country</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.extension:validFrom</td>
+  <td class=xl65 width=295 style='width:221pt'>date</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.status</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.status</td>
+  <td class=xl65 width=129 style='width:97pt'>code</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl68 width=697 style='height:34.0pt;width:523pt'>DDCCImmunization.vaccineCode</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConceptIPS</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.vaccineCode</td>
+  <td class=xl65 width=129 style='width:97pt'>CodeableConcept</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode.coding</td>
+  <td class=xl65 width=295 style='width:221pt'>CodingIPS</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.vaccineCode.coding</td>
+  <td class=xl65 width=129 style='width:97pt'>Coding</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>*</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode.coding:ddccVaccine</td>
+  <td class=xl65 width=295 style='width:221pt'>CodingIPS</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode.coding:ddccVaccine.system</td>
+  <td class=xl65 width=295 style='width:221pt'>uri</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode.coding:ddccVaccine.version</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode.coding:ddccVaccine.code</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode.coding:ddccVaccine.display</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl68 width=697 style='height:34.0pt;width:523pt'>DDCCImmunization.vaccineCode.coding:ddccVaccine.display.extension</td>
+  <td class=xl65 width=295 style='width:221pt'>Extension: Translation</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl68 width=697 style='height:34.0pt;width:523pt'>DDCCImmunization.vaccineCode.coding:ddccVaccine.display.extension:translation</td>
+  <td class=xl65 width=295 style='width:221pt'>Extension: Translation</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode.text</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode:vaccineGPSCode</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode:atcClass</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.vaccineCode:absentOrUnknownImmunization</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=68 style='height:51.0pt'>
+  <td height=68 class=xl68 width=697 style='height:51.0pt;width:523pt'>DDCCImmunization.patient</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference: DDCCPatient</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.patient</td>
+  <td class=xl65 width=129 style='width:97pt'>Reference: SHCPatientGeneralAD</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.patient.reference</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.occurrence[x]</td>
+  <td class=xl65 width=295 style='width:221pt'>dateTime</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.occurrence[x]:occurrenceDateTime</td>
+  <td class=xl65 width=129 style='width:97pt'>dateTime</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.occurrence[x].extension:data-absent-reason</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.location</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference: Location</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.location.display</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl68 width=697 style='height:34.0pt;width:523pt'>DDCCImmunization.manufacturer</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference: Organization</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.manufacturer</td>
+  <td class=xl65 width=129 style='width:97pt'>Reference: Organization</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.lotNumber</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.lotNumber</td>
+  <td class=xl65 width=129 style='width:97pt'>string</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.site</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.route</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.performer</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'>narrower</td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.performer</td>
+  <td class=xl65 width=129 style='width:97pt'>BackboneElement</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'>Different Cardinality</td>
+ </tr>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl68 width=697 style='height:34.0pt;width:523pt'>DDCCImmunization.performer.actor</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference: DDCCPractitioner or
+  DDCCOrganization</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>narrower</td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.performer.actor</td>
+  <td class=xl65 width=129 style='width:97pt'>Reference(Organization)</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'>SHC data type only includes
+  Organization, but DDCC includes Organization and Practitioner</td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.protocolApplied</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.protocolApplied.targetDisease:targetDiseaseGPSCode</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'>SCT-GPS</td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.protocolApplied:protocolAppliedAuthority</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.protocolApplied:protocolAppliedAuthority.targetDisease:targetDiseaseGPSCode</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'>SCT-CVX</td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunization.protocolApplied:protocolAppliedAuthority.doseNumber[x]</td>
+  <td class=xl65 width=295 style='width:221pt'>positiveInt</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.identifier</td>
+  <td class=xl65 width=295 style='width:221pt'>Identifier</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'>Patient.identifier flag is
+  Include in Summary, not Must Support in SHC IG</td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.identifier.system</td>
+  <td class=xl65 width=295 style='width:221pt'>uri</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.identifier.value</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.name</td>
+  <td class=xl65 width=295 style='width:221pt'>HumanName</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'>narrower</td>
+  <td class=xl68 width=356 style='width:267pt'>Patient.name</td>
+  <td class=xl65 width=129 style='width:97pt'>HumanName</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'>Different Cardinality</td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.name.text</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.name.family</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Patient.name.family</td>
+  <td class=xl65 width=129 style='width:97pt'>string</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.name.given</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Patient.name.given</td>
+  <td class=xl65 width=129 style='width:97pt'>string</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>*</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.name:ddccName</td>
+  <td class=xl65 width=295 style='width:221pt'>HumanName</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.name:ddccName.use</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.name:ddccName.text</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.name:ddccName.family</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.name:ddccName.given</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.telecom</td>
+  <td class=xl65 width=295 style='width:221pt'>ContactPoint</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl68 width=697 style='height:34.0pt;width:523pt'>DDCCPatient.gender</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'>On-going discussions about
+  whether to include gender in SHC IG but it is not currently included</td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.birthDate</td>
+  <td class=xl65 width=295 style='width:221pt'>date</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Patient.birthDate</td>
+  <td class=xl65 width=129 style='width:97pt'>date</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.address</td>
+  <td class=xl65 width=295 style='width:221pt'>Address</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.contact</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl69 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl70></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.contact.relationship</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.contact.name</td>
+  <td class=xl65 width=295 style='width:221pt'>HumanName</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.contact.telecom</td>
+  <td class=xl65 width=295 style='width:221pt'>ContactPoint</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.contact.address</td>
+  <td class=xl65 width=295 style='width:221pt'>Address</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.contact.organization</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference: Organization</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.communication</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPatient.communication.language</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=45 style='height:34.0pt'>
+  <td height=45 class=xl68 width=697 style='height:34.0pt;width:523pt'>DDCCPatient.generalPractitioner</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference: Organization,
+  Practitioner, or PractitionerRole</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPractitioner.identifier</td>
+  <td class=xl65 width=295 style='width:221pt'>Identifier</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPractitioner.identifier:ddccIdentifier.use</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPractitioner.identifier:ddccIdentifier.system</td>
+  <td class=xl65 width=295 style='width:221pt'>uri</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPractitioner.identifier:ddccIdentifier.value</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCPractitioner.identifier:ddccIdentifier.assigner</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference: DDCCOrganization</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>Bundle.type</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>bundle.type</td>
+  <td class=xl65 width=129 style='width:97pt'>code</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>Bundle</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>Bundle.identifier</td>
+  <td class=xl65 width=295 style='width:221pt'>Identifier</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>Bundle.timestamp</td>
+  <td class=xl65 width=295 style='width:221pt'>instant</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>Bundle.entry:ddccPatient.resource</td>
+  <td class=xl65 width=295 style='width:221pt'>Patient(DDCCPatient)</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>Bundle.entry:ddccImmunization.resource</td>
+  <td class=xl65 width=295 style='width:221pt'>Immunization(DDCCImmunization)</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>Bundle.signature</td>
+  <td class=xl65 width=295 style='width:221pt'>Signature</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.type</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.category</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.subject</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference(DDCCPatient)</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.subject.reference</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.date</td>
+  <td class=xl65 width=295 style='width:221pt'>instant</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=68 style='height:51.0pt'>
+  <td height=68 class=xl68 width=697 style='height:51.0pt;width:523pt'>DDCCDocumentReference.author</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference(Practiioner |
+  PractitionerRole | Organization | Device | Patient | RelatedPerson)<span
+  style='mso-spacerun:yes'> </span></td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.relatesTo</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.securityLabel</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>*</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content.attachment.language</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content.attachment.uri</td>
+  <td class=xl65 width=295 style='width:221pt'>uri</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content.attachment.hash</td>
+  <td class=xl65 width=295 style='width:221pt'>base64Binary</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content.attachment.creation</td>
+  <td class=xl65 width=295 style='width:221pt'>dateTime</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content.format</td>
+  <td class=xl65 width=295 style='width:221pt'>Coding</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.context.period</td>
+  <td class=xl65 width=295 style='width:221pt'>Period</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DocumentReference.context.facilityType</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.context.practiceSetting</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.context.sourcePatientInfo</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference(Patient)</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.authenticator</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference(DDCCOrganization)</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content:qrImage</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content:qrImage.attachment.contentType</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content:qrContent</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content:qrContent.attachment.contentType</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content:qrContent.attachment.data</td>
+  <td class=xl65 width=295 style='width:221pt'>base64Binary</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content:qrPDF</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content:qrPDF.attachment.contentType</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCDocumentReference.content:qrPDF.attachment.data</td>
+  <td class=xl65 width=295 style='width:221pt'>base64Binary</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunizationRecommendation.patient</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference(DDCCPatient)</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunizationRecommendation.recommendation</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunizationRecommendation.recommendation.vaccineCode</td>
+  <td class=xl65 width=295 style='width:221pt'>CodeableConcept</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunizationRecommendation.recommendation.vaccineCode.coding:ddccVaccine</td>
+  <td class=xl65 width=295 style='width:221pt'>Coding</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunizationRecommendation.recommendation.vaccineCode.coding:ddccVaccine.system</td>
+  <td class=xl65 width=295 style='width:221pt'>uri</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunizationRecommendation.recommendation.vaccineCode.coding:ddccVaccine.code</td>
+  <td class=xl65 width=295 style='width:221pt'>code</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunizationRecommendation.recommendation.dateCriterion</td>
+  <td class=xl65 width=295 style='width:221pt'>BackboneElement</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunizationRecommendation.recommendation.dateCriterion.value</td>
+  <td class=xl65 width=295 style='width:221pt'>dateTime</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>DDCCImmunizationRecommendation.recommendation.supportingImmunization</td>
+  <td class=xl65 width=295 style='width:221pt'>Reference(DDCCImmunization)</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>Organization.name</td>
+  <td class=xl65 width=295 style='width:221pt'>string</td>
+  <td class=xl65 width=107 style='width:80pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>Bundle.entry:ddccBundle.resource</td>
+  <td class=xl65 width=295 style='width:221pt'>Bundle(DDCCDocument)</td>
+  <td class=xl65 width=107 style='width:80pt'>0</td>
+  <td class=xl65 width=103 style='width:77pt'>1</td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.meta.security</td>
+  <td class=xl65 width=129 style='width:97pt'>Coding</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.manufacturer.identifier</td>
+  <td class=xl65 width=129 style='width:97pt'>Identifier</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.manufacturer.identifier.system</td>
+  <td class=xl65 width=129 style='width:97pt'>uri</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.manufacturer.identifier.value</td>
+  <td class=xl65 width=129 style='width:97pt'>string</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.performer.actor.display</td>
+  <td class=xl65 width=129 style='width:97pt'>string</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Immunization.isSubpotent</td>
+  <td class=xl65 width=129 style='width:97pt'>boolean</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>Bundle.entry</td>
+  <td class=xl65 width=129 style='width:97pt'>BackboneElement</td>
+  <td class=xl65 width=96 style='width:72pt'>2</td>
+  <td class=xl65 width=92 style='width:69pt'>*</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>Bundle.entry.resource</td>
+  <td class=xl65 width=129 style='width:97pt'>Resource</td>
+  <td class=xl65 width=96 style='width:72pt'>0</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>Bundle.entry:patient</td>
+  <td class=xl65 width=129 style='width:97pt'>BackboneElement</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>Bundle.entry:patient.fullUrl</td>
+  <td class=xl65 width=129 style='width:97pt'>uri</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>Bundle.entry:immunization</td>
+  <td class=xl65 width=129 style='width:97pt'>BackboneElement</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>*</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=23 style='height:17.0pt'>
+  <td height=23 class=xl68 width=697 style='height:17.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl67>unmatched</td>
+  <td class=xl68 width=356 style='width:267pt'>Bundle.entry:immunization.fullUrl</td>
+  <td class=xl65 width=129 style='width:97pt'>uri</td>
+  <td class=xl65 width=96 style='width:72pt'>1</td>
+  <td class=xl65 width=92 style='width:69pt'>1</td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 class=xl68 width=697 style='height:16.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 class=xl68 width=697 style='height:16.0pt;width:523pt'>&nbsp;</td>
+  <td class=xl65 width=295 style='width:221pt'></td>
+  <td class=xl65 width=107 style='width:80pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=95 style='width:71pt'></td>
+  <td class=xl65 width=83 style='width:62pt'></td>
+  <td class=xl65 width=125 style='width:94pt'></td>
+  <td class=xl68 width=356 style='width:267pt'>&nbsp;</td>
+  <td class=xl65 width=129 style='width:97pt'></td>
+  <td class=xl65 width=96 style='width:72pt'></td>
+  <td class=xl65 width=92 style='width:69pt'></td>
+  <td class=xl65 width=103 style='width:77pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=101 style='width:76pt'></td>
+  <td class=xl65 width=557 style='width:418pt'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=697 style='width:523pt'></td>
+  <td width=295 style='width:221pt'></td>
+  <td width=107 style='width:80pt'></td>
+  <td width=103 style='width:77pt'></td>
+  <td width=95 style='width:71pt'></td>
+  <td width=83 style='width:62pt'></td>
+  <td width=125 style='width:94pt'></td>
+  <td width=356 style='width:267pt'></td>
+  <td width=129 style='width:97pt'></td>
+  <td width=96 style='width:72pt'></td>
+  <td width=92 style='width:69pt'></td>
+  <td width=103 style='width:77pt'></td>
+  <td width=101 style='width:76pt'></td>
+  <td width=101 style='width:76pt'></td>
+  <td width=557 style='width:418pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
